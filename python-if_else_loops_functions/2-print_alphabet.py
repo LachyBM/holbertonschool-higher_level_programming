@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-x = range(97,123)
-for n in x:
+for n in range(97,123):
     print(chr(n), end = "")
