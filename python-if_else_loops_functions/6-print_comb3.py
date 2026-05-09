@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-for n in range(1, 10):
-    for x in range(1+i,10):
-        print(f"{x},", end="")
-        i += 1      
+for n in range(0, 9):
+    for x in range(n + 1, 10):
+        if (n, x) == (8, 9):
+            print("{0}{1}".format(n,x))
+        else:
+            print("{0}{1}".format(n, x), end=", ")
