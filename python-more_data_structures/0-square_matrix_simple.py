@@ -9,5 +9,5 @@ def square_matrix_simple(matrix=[]):
                 new_row.append(None)
             else:
                 new_row.append(n * n)
-                new_matrix.append(new_row)
+        new_matrix.append(new_row)
     return new_matrix
