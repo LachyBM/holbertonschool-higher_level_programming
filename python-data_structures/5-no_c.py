@@ -7,5 +7,4 @@ def no_c(my_string):
             result += ""
         else:
             result += char
-    return result 
-            
+    return result    
