@@ -6,5 +6,4 @@ def safe_print_integer(value):
             print("{:d}".format(value), end="\n")
             return True
     except Exception:
-        if value is not int:
-            return False
+        return False
