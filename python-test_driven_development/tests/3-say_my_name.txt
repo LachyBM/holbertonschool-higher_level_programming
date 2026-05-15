@@ -19,3 +19,11 @@ Traceback (most recent call last):
   File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./3-main.py", line 4, in <module>
     say_my_name("Jack", "John", "Jill")
 TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+>>> say_my_name(12, "John")
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./3-main.py", line 4, in <module>
+    say_my_name(12, "John")
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/3-say_my_name.py", line 16, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
