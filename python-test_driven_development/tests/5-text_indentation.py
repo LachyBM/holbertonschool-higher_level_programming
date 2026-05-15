@@ -1,0 +1,32 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Test the, working. parts: of the? program")
+Test the,
+
+working.
+
+parts:
+
+of the?
+
+programroot@d2c587abc8d04a9ba305ec487850d091-2377118072:~/holbertonschool-higher_level_programming/python-test_driven_development#
+
+>>> text_indentation("words", "new words")
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./5-main.py", line 4, in <module>
+    text_indentation("words", "new words")
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+>>> text_indentation(12)
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./5-main.py", line 4, in <module>
+    text_indentation(12)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/5-text_indentation.py", line 6, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./5-main.py", line 4, in <module>
+    text_indentation()
+TypeError: text_indentation() missing 1 required positional argument: 'text'
