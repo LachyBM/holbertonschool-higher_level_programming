@@ -1,0 +1,49 @@
+>>> print_square = __import__('4-print_square').print_square
+
+>>> print_square(-10)
+ Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square(-10)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/4-print_square.py", line 13, in print_square
+    raise ValueError("size must be >= 0")
+ValueError: size must be >= 0
+
+>>> print_square("two")
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square("two")
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/4-print_square.py", line 11, in print_square
+    raise TypeError("size must be an integer")
+TypeError: size must be an integer
+
+>>> print_square(4.5)
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square(4.5)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/4-print_square.py", line 11, in print_square
+    raise TypeError("size must be an integer")
+TypeError: size must be an integer
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+>>> print_square()
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square()
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(10, 10)
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square(10, 10)
+TypeError: print_square() takes 1 positional argument but 2 were given
