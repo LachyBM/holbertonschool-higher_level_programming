@@ -1,0 +1,21 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+>>> say_my_name("John", 2)
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./3-main.py", line 5, in <module>
+    say_my_name("John", 2)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/3-say_my_name.py", line 18, in say_my_name
+    raise TypeError("last_name myst be a string")
+TypeError: last_name myst be a string
+
+>>> say_my_name("John")
+My name is John 
+
+>>> say_my_name("Jack", "John", "Jill")
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./3-main.py", line 4, in <module>
+    say_my_name("Jack", "John", "Jill")
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
