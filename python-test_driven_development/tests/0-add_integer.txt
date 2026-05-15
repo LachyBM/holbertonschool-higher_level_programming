@@ -36,3 +36,18 @@ Traceback (most recent call last):
   File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./0-main.py", line 4, in <module>
     print(add_integer(2,3,4))
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(2,)
+100
+
+>>> add_integer(2, float(NaN))
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./0-main.py", line 4, in <module>
+    print(add_integer(2, float(NaN)))
+NameError: name 'NaN' is not defined
+
+>>> add_integer(2, float(10**1000))
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./0-main.py", line 4, in <module>
+    print(add_integer(2, float(10**1000)))
+OverflowError: int too large to convert to float

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 add_integer = __import__('0-add_integer').add_integer
 
-print(add_integer(2,3,4))
+print(add_integer(2, float(10**1000)))
 
 try:
     print(add_integer(4, "School"))
