@@ -12,9 +12,9 @@ TypeError: Each row of the matrix must have the same size
 >>> matrix_divided([[1, 14, 3], [1, 7, 1]], 0)
 
 Traceback (most recent call last):
-  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./2-main.py", line 8, in <module>
-    print(matrix_divided(matrix, 0))
-  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/2-matrix_divided.py", line 25, in matrix_divided
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./2-main.py", line 4, in <module>
+    matrix_divided([[1, 14, 3], [1, 7, 1]], 0)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/2-matrix_divided.py", line 27, in matrix_divided
     raise ZeroDivisionError("division by zero")
 ZeroDivisionError: division by zero
 
