@@ -22,5 +22,5 @@ TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 >>> text_indentation("Hello, my friend")
 Hello,
-
+<BLANKLINE>
 my friend
