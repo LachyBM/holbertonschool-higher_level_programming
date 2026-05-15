@@ -20,5 +20,7 @@ Traceback (most recent call last):
     text_indentation()
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 
->>> text_indentation("words")
-words
+>>> text_indentation("Hello, my friend")
+Hello,
+
+my friend
