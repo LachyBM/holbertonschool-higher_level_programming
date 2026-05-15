@@ -47,3 +47,11 @@ Traceback (most recent call last):
   File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
     print_square(10, 10)
 TypeError: print_square() takes 1 positional argument but 2 were given
+
+>>> print_square(-1.5)
+Traceback (most recent call last):
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/./4-main.py", line 4, in <module>
+    print_square(-1.4)
+  File "/root/holbertonschool-higher_level_programming/python-test_driven_development/4-print_square.py", line 15, in print_square
+    raise TypeError("size must be an integer")
+TypeError: size must be an integer
