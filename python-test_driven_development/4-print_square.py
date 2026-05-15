@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """
-module for printing a square 
+module for printing a square
 with hashtags
 """
 
 
 def print_square(size):
+    """
+    prints a square
+    to the value of size
+    """
 
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
@@ -17,4 +21,4 @@ def print_square(size):
     for n in range(size):
         for n in range(size):
             print("#", end="")
-        print()   
+        print()
