@@ -10,16 +10,18 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 2, 10, 3]), 10)
 
     def test_order(self):
-        self-assertEqual(max_integer([1, 2, 3, 4)], 4)
+        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+
+    def test_start(self):
+        self.assertEqual(max_integer([4, 3, 2, 1]), 4)
 
     def test_single(self):
-        self-assertEqual(max_integer([1], 1))
+        self.assertEqual(max_integer([1]), 1)
 
     def test_negatives(self):
-        self_assertEqual(max_integer([-1, -4, -10, -2], -10))
-
+        self.assertEqual(max_integer([-1, -4, -10, -2]), -10)
     def test_one_negative(self):
-        self_assertEqual(max_integer([1, 2, 3, -4], 3))
+        self.assertEqual(max_integer([1, 2, 3, -4]), 3)
 
 if __name__ == "__main__":
     unittest.main()
