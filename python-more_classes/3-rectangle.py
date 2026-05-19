@@ -22,13 +22,10 @@ class Rectangle:
             return ""
 
         final = []
-        for n in range(height-1):
-            for n in range(width):
-                print("#", end="")
-            print()
+
         for n in range(width):
             final.append("#")
-        return (''.join(final))
+        return "\n".join([''.join(final)] * height)
 
     def area(self):
         return self.__width * self.__height
