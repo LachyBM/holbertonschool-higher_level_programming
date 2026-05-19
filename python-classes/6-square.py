@@ -27,6 +27,7 @@ class Square:
 
         if size == 0:
             print()
+            return
 
         for n in range(position[1]):
             print()
