@@ -33,7 +33,7 @@ class Square:
 
         for n in range(size):
             for n in range(position[0]):
-                print("_", end="")
+                print(" ", end="")
             for n in range(size):
                 print("#", end="")
             print()
