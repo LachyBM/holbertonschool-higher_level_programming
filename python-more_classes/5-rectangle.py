@@ -34,7 +34,7 @@ class Rectangle:
         return "Rectangle({}, {})".format(width, height)
 
     def __del__(self):
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
 
     def area(self):
         return self.__width * self.__height
