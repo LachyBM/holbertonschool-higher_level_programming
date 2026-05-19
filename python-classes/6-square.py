@@ -14,8 +14,8 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
 
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         side = self.__size
@@ -57,7 +57,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        self.__position = ()
-        if self.__position[0] < 0 and self.__position[1] < 0:
+    
+        if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        salf.__position = value
+        self.__position = value
