@@ -16,3 +16,10 @@
 
 >>> my_list.print_sorted()
 [-9, -7, -3, -2]
+
+
+
+>>> my_list = MyList([])
+
+>>> my_list.print_sorted()
+[]
