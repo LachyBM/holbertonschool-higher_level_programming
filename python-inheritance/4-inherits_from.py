@@ -4,9 +4,10 @@ Module to check if inherits
 """
 
 
-def inherits_form(obj, a_class):
+def inherits_from(obj, a_class):
     """
-    return true if instance but isnt that type
+    return true if instance
+    but isnt that type
     else false
     """
 
