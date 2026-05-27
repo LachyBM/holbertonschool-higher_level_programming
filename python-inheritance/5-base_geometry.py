@@ -5,4 +5,8 @@ module for geometry
 
 
 class BaseGeometry():
+    """
+    class for geo
+    """
+
     pass
