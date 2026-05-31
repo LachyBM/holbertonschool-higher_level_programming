@@ -10,7 +10,7 @@ class SwimMixin:
     """
 
     def swim(self):
-        print("The creatue swims!")
+        print("The creature swims!")
 
 
 class FlyMixin:
