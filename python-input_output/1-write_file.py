@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module for 
+module for
 printing a file
 i create
 """
