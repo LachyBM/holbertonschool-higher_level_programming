@@ -3,8 +3,6 @@
 script that adds to
 python list
 """
-
-
 import sys
 
 
