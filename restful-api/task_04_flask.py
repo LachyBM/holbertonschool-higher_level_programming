@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-
+"""
+flask site
+"""
 from flask import Flask, jsonify, request
+
 
 app = Flask(__name__)
 users = {}
@@ -43,7 +46,6 @@ def add_user():
 
     users[username] = data
     return jsonify({"message": "User added", "user": data}), 201
-
 
 
 if __name__ == "__main__":
