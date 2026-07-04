@@ -2,6 +2,8 @@
 """
 module for listing all states
 """
+
+
 import MySQLdb
 import sys
 
