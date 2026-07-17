@@ -16,12 +16,12 @@ def generate_invitations(template_content, attendees):
     if all(isinstance(people, dict) for people in attendees) is False:
         print("Attendees need to have a dictionary of there data")
         return
-    if attendees == 0:
+    if len(attendees) == 0:
         print("No data provided, no output files generated")
         return
     
     printer = ''
-    count = 0
+    count = 1
     options = ['name', 'event_title', 'event_date','event_location']
     length = len(options)
 
@@ -39,10 +39,7 @@ def generate_invitations(template_content, attendees):
         printer = message
 
         printerPath = f"output_{count}.txt"
-        if os.path.exists(printerPath):
-            print("Exists")
-        else:
-            with open(printerPath, "w", encoding="utf-8") as f:
-                f.write(printer)
+        with open(printerPath, "w", encoding="utf-8") as f:
+            f.write(printer)
 
         count += 1
