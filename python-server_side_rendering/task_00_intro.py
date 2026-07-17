@@ -7,7 +7,7 @@ def generate_invitations(template_content, attendees):
     if type(template_content) is not str:
         print("Template is not a string")
         return
-    if template_content == ' ':
+    if template_content == "":
         print( "Template is empty, no output files generated.")
         return
     if type(attendees) is not list:
