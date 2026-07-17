@@ -33,7 +33,7 @@ def generate_invitations(template_content, attendees):
                 if x is None:
                     raise KeyError     
             except KeyError:
-                x = options[n]+":N/A"
+                x = "N/A"
             message = message.replace('{'+ options[n] + '}', x)
 
         printer = message
