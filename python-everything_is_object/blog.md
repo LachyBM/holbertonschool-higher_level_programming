@@ -38,6 +38,7 @@ Every object and a Type and an ID, you can test this simply like so:
 Type, its your data type or class of the object, these can range from int, str, list, bool, etc.. in python you dont have to declare the type like other languages,
 it self assigns the data type of the object when created or updated.
 
+![diagram](immutable.webp)
 
 Id, its a unique id that represents the memory address of the object. This will be evident later, you can have 2 different objects have the exact same value
 but its Id will be different, as its independent of that object but has the same value. BUT two different variables can also use the same id, even though they are assigned
